@@ -1,9 +1,8 @@
 //
 //  KentekenFormatterTests.h
-//  Schaderegistratie
 //
 //  Created by Mathijs Kadijk on 03-09-12.
-//  Copyright (c) 2012 Bultman. All rights reserved.
+//  Copyright (c) 2012 Wrep. All rights reserved.
 //
 
 #import <SenTestingKit/SenTestingKit.h>
