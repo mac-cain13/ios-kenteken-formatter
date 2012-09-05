@@ -19,7 +19,8 @@
 		D50D958615F7E0EE00A93E36 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D50D956615F7E0ED00A93E36 /* UIKit.framework */; };
 		D50D958715F7E0EE00A93E36 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D50D956815F7E0ED00A93E36 /* Foundation.framework */; };
 		D50D958F15F7E0EE00A93E36 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D50D958D15F7E0EE00A93E36 /* InfoPlist.strings */; };
-		D50D959215F7E0EE00A93E36 /* kenteken_formatterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D50D959115F7E0EE00A93E36 /* kenteken_formatterTests.m */; };
+		D50D959E15F7E12A00A93E36 /* NSString+KentekenFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = D50D959D15F7E12A00A93E36 /* NSString+KentekenFormatter.m */; };
+		D50D95A115F7E14100A93E36 /* KentekenFormatterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D50D95A015F7E14100A93E36 /* KentekenFormatterTests.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,8 +51,10 @@
 		D50D958415F7E0EE00A93E36 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		D50D958C15F7E0EE00A93E36 /* kenteken-formatterTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "kenteken-formatterTests-Info.plist"; sourceTree = "<group>"; };
 		D50D958E15F7E0EE00A93E36 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		D50D959015F7E0EE00A93E36 /* kenteken_formatterTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = kenteken_formatterTests.h; sourceTree = "<group>"; };
-		D50D959115F7E0EE00A93E36 /* kenteken_formatterTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = kenteken_formatterTests.m; sourceTree = "<group>"; };
+		D50D959C15F7E12A00A93E36 /* NSString+KentekenFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+KentekenFormatter.h"; sourceTree = "<group>"; };
+		D50D959D15F7E12A00A93E36 /* NSString+KentekenFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+KentekenFormatter.m"; sourceTree = "<group>"; };
+		D50D959F15F7E14100A93E36 /* KentekenFormatterTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KentekenFormatterTests.h; sourceTree = "<group>"; };
+		D50D95A015F7E14100A93E36 /* KentekenFormatterTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KentekenFormatterTests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +84,7 @@
 		D50D955715F7E0ED00A93E36 = {
 			isa = PBXGroup;
 			children = (
+				D50D959B15F7E10500A93E36 /* Classes */,
 				D50D956C15F7E0ED00A93E36 /* kenteken-formatter */,
 				D50D958A15F7E0EE00A93E36 /* kenteken-formatterTests */,
 				D50D956515F7E0ED00A93E36 /* Frameworks */,
@@ -135,8 +139,8 @@
 		D50D958A15F7E0EE00A93E36 /* kenteken-formatterTests */ = {
 			isa = PBXGroup;
 			children = (
-				D50D959015F7E0EE00A93E36 /* kenteken_formatterTests.h */,
-				D50D959115F7E0EE00A93E36 /* kenteken_formatterTests.m */,
+				D50D959F15F7E14100A93E36 /* KentekenFormatterTests.h */,
+				D50D95A015F7E14100A93E36 /* KentekenFormatterTests.m */,
 				D50D958B15F7E0EE00A93E36 /* Supporting Files */,
 			);
 			path = "kenteken-formatterTests";
@@ -149,6 +153,15 @@
 				D50D958D15F7E0EE00A93E36 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D50D959B15F7E10500A93E36 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				D50D959C15F7E12A00A93E36 /* NSString+KentekenFormatter.h */,
+				D50D959D15F7E12A00A93E36 /* NSString+KentekenFormatter.m */,
+			);
+			path = Classes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -262,6 +275,7 @@
 				D50D957315F7E0EE00A93E36 /* main.m in Sources */,
 				D50D957715F7E0EE00A93E36 /* WRPAppDelegate.m in Sources */,
 				D50D957D15F7E0EE00A93E36 /* WRPViewController.m in Sources */,
+				D50D959E15F7E12A00A93E36 /* NSString+KentekenFormatter.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -269,7 +283,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D50D959215F7E0EE00A93E36 /* kenteken_formatterTests.m in Sources */,
+				D50D95A115F7E14100A93E36 /* KentekenFormatterTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -364,6 +378,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "kenteken-formatter/kenteken-formatter-Prefix.pch";
 				INFOPLIST_FILE = "kenteken-formatter/kenteken-formatter-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -375,6 +390,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "kenteken-formatter/kenteken-formatter-Prefix.pch";
 				INFOPLIST_FILE = "kenteken-formatter/kenteken-formatter-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
