@@ -42,6 +42,12 @@ typedef NS_ENUM(NSInteger, WRPKentekenSidecode) {
 
 @interface NSString (KentekenFormatter)
 
+/**
+ Check welke sidecode dit kenteken is.
+ 
+ @discussion Voor meer informatie over kenteken sidecodes zie http://nl.wikipedia.org/wiki/Nederlands_kenteken
+ */
+@property (readonly, nonatomic)WRPKentekenSidecode kentekenSidecode;
 
 /**
  Format een string naar een Nederlands kenteken. Sidecode 1 t/m 10 worden ondersteund.
@@ -49,12 +55,5 @@ typedef NS_ENUM(NSInteger, WRPKentekenSidecode) {
  @discussion Corrupte kentekens worden zo goed en zo kwaad als het gaat geformat, dit zodat deze functie ook nuttig is om te gebruiken tijdens het invoeren van de gebruiker. Voor meer informatie over kenteken formaten en sidecodes zie http://nl.wikipedia.org/wiki/Nederlands_kenteken
  */
 - (NSString *)kentekenFormat;
-
-/**
- Check welke sidecode dit kenteken is.
- 
- @discussion Voor meer informatie over kenteken sidecodes zie http://nl.wikipedia.org/wiki/Nederlands_kenteken
- */
-- (WRPKentekenSidecode)kentekenSidecode;
 
 @end
