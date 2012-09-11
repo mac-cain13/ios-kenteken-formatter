@@ -28,3 +28,6 @@ Kan ik betaalde ondersteuning krijgen?
 --------------------------------------
 Ja dat kan, kijk op [onze website](http://www.wrep.nl/#contactgegevens) voor contactgegevens, bel of mail met een heldere omschrijving van je probleem of vraag en dan kijken we graag wat we voor je kunnen betekenen!
 
+Licentie
+--------
+De kenteken formatter code valt onder de [MIT License](https://raw.github.com/wrep/ios-kenteken-formatter/master/License).
