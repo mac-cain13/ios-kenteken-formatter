@@ -42,6 +42,12 @@ typedef NS_ENUM(NSInteger, WRPKentekenSidecode) {
     WRPKentekenSidecode10 = 10
 };
 
+typedef NS_ENUM(NSInteger, WRPKentekenType) {
+    WRPKentekenTypeUnknown = 0,
+    WRPKentekenTypeNormal = 1,
+    WRPKentekenTypeSpecial = 2
+};
+
 @interface NSString (KentekenFormatter)
 
 /**
@@ -50,6 +56,13 @@ typedef NS_ENUM(NSInteger, WRPKentekenSidecode) {
  @discussion Voor meer informatie over kenteken sidecodes zie http://nl.wikipedia.org/wiki/Nederlands_kenteken
  */
 @property (readonly, nonatomic)WRPKentekenSidecode kentekenSidecode;
+
+/**
+ Check wat voor type kenteken dit is.
+ 
+ @discussion Type kan zijn normaal, speciaal of onbekend. Dit geeft een eenvoudige indicatie van het kenteken, voor meer detail gebruik de kentekenSidecode property
+ */
+@property (readonly, nonatomic)WRPKentekenType kentekenType;
 
 /**
  Format een string naar een Nederlands kenteken. Sidecode 1 t/m 10 worden ondersteund.

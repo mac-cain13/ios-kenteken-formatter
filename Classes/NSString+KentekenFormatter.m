@@ -78,6 +78,26 @@
     return workingString;
 }
 
+- (WRPKentekenType)kentekenType
+{
+    // Default to unknown
+    WRPKentekenType type = WRPKentekenTypeUnknown;
+    
+    // Get sidecode and check type of the sidecode
+    WRPKentekenSidecode sidecode = self.kentekenSidecode;
+    if (sidecode < 0)
+    {
+        type = WRPKentekenTypeSpecial;
+    }
+    else if (sidecode > 0)
+    {
+        type = WRPKentekenTypeNormal;
+    }
+    
+    // Return result
+    return type;
+}
+
 - (WRPKentekenSidecode)kentekenSidecode
 {
     // Initialize sidecode regexps
