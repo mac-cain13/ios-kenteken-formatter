@@ -82,6 +82,7 @@
 {
     // Initialize sidecode regexps
     NSArray *sidecodeExpressions = @[
+    @{@"regexp" : @"^F-[0-9]{2}-[0-9]{2}$", @"sidecode" : @(WRPKentekenSidecodeTijdelijkVoorEenDag)},
     @{@"regexp" : @"^ZZ-[0-9]{2}-[0-9]{2}$", @"sidecode" : @(WRPKentekenSidecodeBijzondereToelating)},
     @{@"regexp" : @"^CDJ-[0-9]{3}$", @"sidecode" : @(WRPKentekenSidecodeInternationaalGerechtshof)},
     @{@"regexp" : @"^AA-[0-9]{2,3}(-[0-9]{2})?$", @"sidecode" : @(WRPKentekenSidecodeKoninklijkHuis)},

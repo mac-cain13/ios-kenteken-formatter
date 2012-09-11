@@ -24,6 +24,7 @@
 #import <Foundation/Foundation.h>
 
 typedef NS_ENUM(NSInteger, WRPKentekenSidecode) {
+    WRPKentekenSidecodeTijdelijkVoorEenDag = -4,
     WRPKentekenSidecodeBijzondereToelating = -3,
     WRPKentekenSidecodeInternationaalGerechtshof = -2,
     WRPKentekenSidecodeKoninklijkHuis = -1,

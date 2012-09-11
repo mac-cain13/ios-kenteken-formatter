@@ -34,6 +34,8 @@
     // Sidecode 1
     @{@"input" : @"ND-00-01", @"output" : @"ND-00-01", @"sidecode" : @(WRPKentekenSidecode1)},
     @{@"input" : @"ND@0#001", @"output" : @"ND-00-01", @"sidecode" : @(WRPKentekenSidecode1)},
+    @{@"input" : @"FF2113", @"output" : @"FF-21-13", @"sidecode" : @(WRPKentekenSidecode1)},
+    
     
     // Sidecode 2
     @{@"input" : @"00-02-AD", @"output" : @"00-02-AD", @"sidecode" : @(WRPKentekenSidecode2)},
@@ -93,6 +95,11 @@
     @{@"input" : @"ZZ0001", @"output" : @"ZZ-00-01", @"sidecode" : @(WRPKentekenSidecodeBijzondereToelating)},
     @{@"input" : @"ZZ-99-33", @"output" : @"ZZ-99-33", @"sidecode" : @(WRPKentekenSidecodeBijzondereToelating)},
     
+    // Tijdelijk kenteken voor 1 dag
+    @{@"input" : @"F-01-02", @"output" : @"F-01-02", @"sidecode" : @(WRPKentekenSidecodeTijdelijkVoorEenDag)},
+    @{@"input" : @"F0102", @"output" : @"F-01-02", @"sidecode" : @(WRPKentekenSidecodeTijdelijkVoorEenDag)},
+    @{@"input" : @"F-2211", @"output" : @"F-22-11", @"sidecode" : @(WRPKentekenSidecodeTijdelijkVoorEenDag)},
+    
     // Ongeldige kentekens
     @{@"input" : @"", @"output" : @"", @"sidecode" : @(WRPKentekenSidecodeUnknown)},
     @{@"input" : @"ZZ-ZZ-ZZ", @"output" : @"ZZ-ZZ-ZZ", @"sidecode" : @(WRPKentekenSidecodeUnknown)},
@@ -102,7 +109,9 @@
     @{@"input" : @"54JGPV123", @"output" : @"54-JG-PV-123", @"sidecode" : @(WRPKentekenSidecodeUnknown)},
     @{@"input" : @"D-001", @"output" : @"D-001", @"sidecode" : @(WRPKentekenSidecodeUnknown)},
     @{@"input" : @"DDD000", @"output" : @"DDD-000", @"sidecode" : @(WRPKentekenSidecodeUnknown)},
-    @{@"input" : @"X0X0X0", @"output" : @"X-0-X-0-X-0", @"sidecode" : @(WRPKentekenSidecodeUnknown)}
+    @{@"input" : @"X0X0X0", @"output" : @"X-0-X-0-X-0", @"sidecode" : @(WRPKentekenSidecodeUnknown)},
+    @{@"input" : @"F21AA", @"output" : @"F-21-AA", @"sidecode" : @(WRPKentekenSidecodeUnknown)},
+    @{@"input" : @"FA21A", @"output" : @"FA-21-A", @"sidecode" : @(WRPKentekenSidecodeUnknown)}
     ];
 }
 
