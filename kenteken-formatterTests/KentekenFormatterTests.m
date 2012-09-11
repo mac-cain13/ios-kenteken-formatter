@@ -100,6 +100,11 @@
     @{@"input" : @"F0102", @"output" : @"F-01-02", @"sidecode" : @(WRPKentekenSidecodeTijdelijkVoorEenDag)},
     @{@"input" : @"F-2211", @"output" : @"F-22-11", @"sidecode" : @(WRPKentekenSidecodeTijdelijkVoorEenDag)},
     
+    // Voertuig binnen/buiten Nederland brengen
+    @{@"input" : @"Z-01-02", @"output" : @"Z-01-02", @"sidecode" : @(WRPKentekenSidecodeVoertuigBinnenOfBuitenNederlandBrengen)},
+    @{@"input" : @"Z0102", @"output" : @"Z-01-02", @"sidecode" : @(WRPKentekenSidecodeVoertuigBinnenOfBuitenNederlandBrengen)},
+    @{@"input" : @"Z-2211", @"output" : @"Z-22-11", @"sidecode" : @(WRPKentekenSidecodeVoertuigBinnenOfBuitenNederlandBrengen)},
+    
     // Ongeldige kentekens
     @{@"input" : @"", @"output" : @"", @"sidecode" : @(WRPKentekenSidecodeUnknown)},
     @{@"input" : @"ZZ-ZZ-ZZ", @"output" : @"ZZ-ZZ-ZZ", @"sidecode" : @(WRPKentekenSidecodeUnknown)},
@@ -111,7 +116,8 @@
     @{@"input" : @"DDD000", @"output" : @"DDD-000", @"sidecode" : @(WRPKentekenSidecodeUnknown)},
     @{@"input" : @"X0X0X0", @"output" : @"X-0-X-0-X-0", @"sidecode" : @(WRPKentekenSidecodeUnknown)},
     @{@"input" : @"F21AA", @"output" : @"F-21-AA", @"sidecode" : @(WRPKentekenSidecodeUnknown)},
-    @{@"input" : @"FA21A", @"output" : @"FA-21-A", @"sidecode" : @(WRPKentekenSidecodeUnknown)}
+    @{@"input" : @"FA21A", @"output" : @"FA-21-A", @"sidecode" : @(WRPKentekenSidecodeUnknown)},
+    @{@"input" : @"Z21AA", @"output" : @"Z-21-AA", @"sidecode" : @(WRPKentekenSidecodeUnknown)},
     ];
 }
 
