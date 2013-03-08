@@ -18,6 +18,10 @@ Kijk eventueel in de `NSString+KentekenFormatter.h` welke methoden beschikbaar z
 `[@"11A" kentekenSidecode]; // Dit geeft WRPKentekenSidecodeUnknown terug`
 `[@"AA-01" kentekenSidecode]; // Dit geeft de WRPKentekenSidecodeKoninklijkHuis terug`
 
+Limitaties
+----------
+De RDW geeft niet alle mogelijke combinaties van een sidecode uit, specifieke combinaties met bijvoorbeeld afkortingen van politieke partijen worden niet uitgegeven. Hier controleren we niet op, je kunt dus nog kentekens invoeren die nooit zullen worden uitgegeven.
+
 Hoe kan ik meehelpen?
 ---------------------
 Natuurlijk! Fork het project, maak je aanpassingen/toevoegingen/bugfixes en submit een pull request. Check de issues tab voor eventuele inspiratie als je mee wilt werken maar niet zo goed iets weet. Let goed up dat je pull request gebaseerd is op de laatste commits hier! Dat maakt het een stuk makkelijker voor iedereen. :)
